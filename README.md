@@ -64,12 +64,13 @@ When a developer pushes the updated code to the GIT master branch:
 This process should be automatic and triggered by a push to the GitHub master branch.
 
 ## Application source code is available at the following link
-[GitHub-MedicureApp-Link](https://github.com/shubhamkushwah123/medicure-app.git)
+[GitHub-MedicureApp-Link](https://github.com/rajasghyd/medicare.git)
 
 ## How to run the app
 - Build App : mvn clean package
 - Run App : mvn spring-boot:run
-- access using the url : http://ipaddress:8082/
+- access Test Environment using the url : http://ipaddress:8085/
+- access Prod Environment using the url : http://ipaddress:8086/
 
 ## How to submit the project the project : 
 
