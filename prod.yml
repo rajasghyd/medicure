@@ -1,0 +1,4 @@
+- hosts: ubuntu-prod.devops.org
+  tasks:
+    - name : Deployment of Medicure Application to Prod Environment
+      shell: docker run -itd -p 8086:8082 rajasghyd/medicure:1.1
