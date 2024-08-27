@@ -1,4 +1,6 @@
-- hosts: ubuntu-test.devops.org
+---
+- name: Test Environment Playbook
+  hosts: Test
   tasks:
-    - name : Deployment of Medicure Application to Test Environment
-      shell: docker run -itd -p 8085:8082 rajasghyd/medicure:1.1
+  - name: Deployment of Medicure Application to Test Environment
+    ansible.builtin.shell: docker run -itd -p 8085:8082 rajasghyd/medicure:1.1

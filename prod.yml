@@ -1,4 +1,6 @@
-- hosts: ubuntu-prod.devops.org
+---
+- name: Prod Environment Playbook
+  hosts: Prod
   tasks:
-    - name : Deployment of Medicure Application to Prod Environment
-      shell: docker run -itd -p 8086:8082 rajasghyd/medicure:1.1
+  - name: Deployment of Medicure Application to Prod Environment
+    ansible.builtin.shell: docker run -itd -p 8086:8082 rajasghyd/medicure:1.1
